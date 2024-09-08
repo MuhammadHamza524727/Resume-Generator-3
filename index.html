@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="resume-form">
+        <h1 class="appname">Resume Generator</h1>
+        <div class="form">
+            <div class="form1">
+                <h3 class="form1Name">Personal Information</h3>
+                <div class="form-Group">
+                    <label for="nameField">Your Name</label><br>
+                    <input type="text" id="nameField" class="form-control" required placeholder="Enter here">
+                </div>
+
+                <div class="form-Group">
+                    <label for="contactField">Your Contact</label><br>
+                    <input type="text" id="contactField" class="form-control" required placeholder="Enter here">
+                </div>
+
+                <div class="form-Group">
+                    <label for="AddressField">Your Address</label><br>
+                    <textarea type="text" id="AddressField" class="form-control-textarea" required
+                        placeholder="Enter here"></textarea>
+                </div>
+
+
+
+                <p class="SocialLinks">Social Links</p>
+
+                <div class="form-Group">
+                    <label for="Facebook">Facebook</label><br>
+                    <input type="text" id="Facebook" class="form-control" required placeholder="Enter here">
+                </div>
+
+                <div class="form-Group">
+                    <label for="Instagram">Instagram</label><br>
+                    <input type="text" id="Instagram" class="form-control" required placeholder="Enter here">
+                </div>
+
+
+                <div class="form-Group">
+                    <label for="LinkdIn">LinkdIn</label><br>
+                    <input type="text" id="LinkdIn" class="form-control" required placeholder="Enter here">
+                </div>
+
+
+            </div>
+
+
+
+            <div class="form2">
+                <h3 class="form1Name">Professional Information</h3>
+
+
+
+                <div class="form-Group" id="we">
+                    <label class="main-head">Work Experience</label><br>
+                    <textarea type="text" class="form-control-textarea weField" required
+                        placeholder="Enter here"></textarea>
+                </div>
+                <div class="btnMain">
+                    <button onclick="addNewWEField()" class="btnaddmore " id="weAddButton">Add more</button>
+
+                </div>
+
+                <div class="form-Group" id="aq">
+                    <label class="main-head">Academic Qualification</label><br>
+                    <textarea type="text" class="form-control-textarea aqField" required
+                        placeholder="Enter here"></textarea>
+                </div>
+                <div class="btnMain" id="aqAddButton">
+                    <button onclick="addNewAQField()" class="btnaddmore">Add more</button>
+
+                </div>
+
+                <div class="form-Group">
+                    <label class="main-head">Skills</label><br>
+                    <textarea type="text" class="form-control-textarea skField" required
+                        placeholder="Enter here"></textarea>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <button class="btn-generator">Generate Resume</button>
+
+
+
+
+    </section>
+
+
+    
+
+
+
+    <script src="script.ts"></script>
+</body>
+
+</html>
